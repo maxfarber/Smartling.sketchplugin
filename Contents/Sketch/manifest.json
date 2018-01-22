@@ -1,0 +1,80 @@
+{
+  "author" : "Emilien Huet",
+  "commands" : [
+    {
+      "script" : "strings.js",
+      "handler" : "extractStrings",
+      "shortcut" : "",
+      "name" : "Export content to file...",
+      "identifier" : "export"
+    },
+    {
+      "script" : "strings.js",
+      "handler" : "uploadStrings",
+      "shortcut" : "",
+      "name" : "Submit page content to Smartling...",
+      "identifier" : "upload"
+    },
+    {
+      "script" : "strings.js",
+      "handler" : "importStrings",
+      "shortcut" : "",
+      "name" : "Import page translations from file...",
+      "identifier" : "import"
+    },
+    {
+      "script" : "strings.js",
+      "handler" : "downloadStrings",
+      "shortcut" : "",
+      "name" : "Retrieve translations from Smartling...",
+      "identifier" : "download"
+    },
+
+    {
+      "script" : "strings.js",
+      "handler" : "pseudoLocalize",
+      "shortcut" : "",
+      "name" : "Pseudo translate page...",
+      "identifier" : "pseudo"
+    },
+
+    {
+      "script" : "api.js",
+      "handler" : "logout",
+      "shortcut" : "",
+      "name" : "Log out of Smartling",
+      "identifier" : "logout"
+    },
+    {
+      "script" : "api.js",
+      "handler" : "support",
+      "shortcut" : "",
+      "name" : "Support",
+      "identifier" : "support"
+    }
+  ],
+  "menu": {
+    "items": [
+      "upload",
+      "download",
+      "-",
+      "export",
+      "import",
+      "-",
+      "pseudo",
+      "-",
+      {
+       "title": "Account",
+       "items": [
+         "support",
+         "logout"
+       ]
+     }
+    ],
+  },
+  "identifier" : "com.smartling.sketch-localization",
+  "version" : "1.0.6",
+  "description" : "Localize your Sketch mockups with quality translations from Smartling.",
+  "authorEmail" : "hi@smartling.com",
+  "name" : "Smartling"
+}
